@@ -8,7 +8,14 @@ class empleado extends Model
 {
  protected $table= 'empleado';
  
- protected $fillable=
+ protected $fillable=[
  
- 'cui','nombr.e','apellido','email', 'direccion', 'telefono_casa','telefono_movil';  ///
+ 'cui',
+ 'nombre',
+ 'apellido',
+ 'email',
+ 'direccion', 
+ 'telefono_casa',
+ 'telefono_movil'  
+]
 }
