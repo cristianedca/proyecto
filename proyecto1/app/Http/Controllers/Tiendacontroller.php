@@ -34,7 +34,7 @@ class Tiendacontroller extends Controller
      */
     public function create()
     {
-        return view("tiendas.create");
+        |
     }
 
     /**
@@ -69,7 +69,8 @@ class Tiendacontroller extends Controller
 
 
     {
-        return view ("tiendas.edit");
+            
+     return view ("tiendas.edit");
 
     }
 

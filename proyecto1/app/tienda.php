@@ -11,5 +11,10 @@ class tienda extends Model
  
  protected $fillable=
  
- 'id','nombre'  //
+ 'id',
+ 'nombre',
+ 'nit',
+ 'encargado',
+ 'ubicacion',
+ 'capacidad',  //
 };

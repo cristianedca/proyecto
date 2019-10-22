@@ -3,31 +3,29 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-
 use Illuminate\support\Facades\Redirect;
 use Illuminate\support\Facades\Reponse;
 use Illuminate\support\Facades\Auth;
-use APP\empleado;
+use APP\proveedor;
 
-
-class Empleadocontroller extends Controller
+class ProveedorController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+
      */
      public function __construct()
     {
         $this->middleware('auth');
     }
 
-    public function index()
 
+
+    public function index()
     {
-         return view("empleados.index");
-        
+    return view("proveedores.index");
     }
 
     /**
@@ -37,7 +35,7 @@ class Empleadocontroller extends Controller
      */
     public function create()
     {
-    return view("empleados.create");
+    return view("proveedores.create");
     }
 
     /**
@@ -69,8 +67,9 @@ class Empleadocontroller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit()
+
     {
-    return view ("empleados.edit");
+    return view ("proveedores.edit");
     }
 
     /**
